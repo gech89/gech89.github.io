@@ -4,29 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nineSystems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="nineSystems.css">
 </head>
 <body>
-    <h1>Welcome to nineSystems</h1>
-    <p>ይህ በጌታችን እና በእመቤታችን ፈቃድ የተከፈተ የ 9ሲስተምስ ድህረ-ገፅ ነው። ዌብሳይቱ በመሰራት ላይ ነው።</p>
-    
-    <button id="aboutBtn">About Us</button>
-    <button id="contactBtn">Contact Us</button>
-    
-    <div id="aboutContent" style="display: none;">
-        <p>nineSystems is a Tech company. We:</p>
-        <ul>
-            <li>Develop apps and websites</li>
-            <li>Give free tech and programming lectures</li>
-            <li>Have a site where you can buy electronics devices like mobiles, computers, hard disks, printers, speakers...</li>
-            <li>And many more electrical devices you may ever need. Just contact us!</li>
-        </ul>
-    </div>
-    
-    <div id="contactContent" style="display: none;">
-        <p>Phone: +251918298989</p>
-        <p>Email: getnet.aya89@gmail.com</p>
-    </div>
+    <header>
+        <div class="logo">nineSystems</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#lectures">Lectures</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#others">Others</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to nineSystems</h1>
+            <p>ይህ በጌታችን በ እመቤታችን ፈቃድ የተከፈተ የ 9ሲስተምስ �ድህረ-ገፅ ነው። ዌብሳይቱ በመሰራት �ይ ነው።</p>
+        </section>
+
+        <section class="categories">
+            <div class="category-card" onclick="showCategory('products')">
+                <i class="fas fa-laptop"></i>
+                <h3>Products</h3>
+            </div>
+            <div class="category-card" onclick="showCategory('lectures')">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Lectures</h3>
+            </div>
+            <div class="category-card" onclick="showCategory('posts')">
+                <i class="fas fa-blog"></i>
+                <h3>Posts</h3>
+            </div>
+            <div class="category-card" onclick="showCategory('others')">
+                <i class="fas fa-ellipsis-h"></i>
+                <h3>Others</h3>
+            </div>
+        </section>
+
+        <div class="buttons-container">
+            <button id="aboutBtn" class="modern-btn">About Us <i class="fas fa-chevron-down"></i></button>
+            <button id="contactBtn" class="modern-btn">Contact Us <i class="fas fa-chevron-down"></i></button>
+        </div>
+
+        <div id="aboutContent" class="content-card">
+            <h2>About nineSystems</h2>
+            <p>nineSystems is a Tech company. We:</p>
+            <ul>
+                <li><i class="fas fa-code"></i> Develop apps and websites</li>
+                <li><i class="fas fa-graduation-cap"></i> Give free tech and programming lectures</li>
+                <li><i class="fas fa-shopping-cart"></i> Sell electronics devices (mobiles, computers, accessories)</li>
+                <li><i class="fas fa-plug"></i> Provide various electrical devices you may need</li>
+            </ul>
+        </div>
+
+        <div id="contactContent" class="content-card">
+            <h2>Contact Us</h2>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+251918298989">+251 918 298 989</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:getnet.aya89@gmail.com">getnet.aya89@gmail.com</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 nineSystems. All rights reserved.</p>
+    </footer>
 
     <script src="nineSystems.js"></script>
 </body>
